@@ -1,14 +1,17 @@
 {
-  "name": "slack-winston",
-  "version": "0.0.9",
-  "description": "A Slack transport for winston",
-  "author": "Nick Baugh <niftylettuce@gmail.com>",
+  "name": "slack-winston-transport",
+  "version": "1.0.0",
+  "description": "Slack transport for winston based on slack-winston",
+  "author": "Elliot Blackburn <elliot@lybrary.io>",
+  "main": "./lib/slack-winston",
+  "types": "./index.d.ts",
   "scripts": {
-    "test": "mocha --timeout 5000 test/"
+    "test": "mocha --timeout 5000 test/",
+    "pretty": "prettier --trailing-comma es5 --single-quote --write '{lib,test}/**/*.js'"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/niftylettuce/slack-winston.git"
+    "url": "https://github.com/bluehatbrit/winston-transport-slack.git"
   },
   "keywords": [
     "logging",
@@ -16,12 +19,12 @@
     "tools",
     "chat",
     "winston",
-    "slack",
-    "flatiron"
+    "slack"
   ],
   "dependencies": {
     "async": "^2.4.1",
     "lodash": "~4.16.6",
+    "prettier": "^1.10.2",
     "request": "~2.78.0"
   },
   "devDependencies": {
@@ -31,9 +34,8 @@
     "winston": "~2.3"
   },
   "peerDependencies": {
-    "winston": "<=0.8 || >=0.7"
+    "winston": ">=2.3.1"
   },
-  "main": "./lib/slack-winston",
   "engines": {
     "node": ">= 0.10.x"
   }

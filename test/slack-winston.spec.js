@@ -2,19 +2,15 @@ var expect = require('chai').expect,
   Slack = require('../lib/slack-winston').Slack,
   nock = require('nock');
 
-
 var config = {
   webhook_url: 'http://slack.com/',
-  channel: '#some-channel',
-  username: 'My Logger',
-  icon_emoji: ':smiling_imp:',
-  message: '{{message}}\n\n```{{meta}}```'
+  message: '{{message}}\n\n```{{meta}}```',
 };
 
-describe('Slack', function () {
+describe('Slack', function() {
   var transport;
 
-  beforeEach(function () {
+  beforeEach(function() {
     transport = new Slack(config);
   });
 
