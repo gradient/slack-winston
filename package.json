@@ -1,6 +1,6 @@
 {
   "name": "slack-winston-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slack transport for winston based on slack-winston",
   "author": "Elliot Blackburn <elliot@lybrary.io>",
   "main": "./lib/slack-winston",

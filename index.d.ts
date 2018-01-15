@@ -3,8 +3,8 @@ import * as winston from 'winston';
 export interface SlackTransportOptions extends winston.WinstonModuleTransportOptions {
   domain: string;
   webhook_url: string;
-  channel: string;
 
+  channel?: string;
   username?: string;
   icon_emoji?: string;
   message?: string;
